@@ -1,0 +1,17 @@
+:root { color-scheme: light dark; --bg:#f2f2f7; --card:#fff; --text:#1c1c1e; --muted:#6c6c70; --accent:#5e5ce6; }
+@media (prefers-color-scheme: dark) { :root { --bg:#000; --card:#1c1c1e; --text:#f2f2f7; --muted:#a1a1a6; --accent:#7d7aff; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif; }
+main { max-width:720px; margin:0 auto; padding:48px 20px 64px; }
+header { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+header img { width:56px; height:56px; border-radius:13px; }
+h1 { font-size:34px; line-height:1.15; margin:0; letter-spacing:-0.02em; }
+h2 { font-size:21px; margin:32px 0 8px; }
+h3 { font-size:17px; margin:20px 0 4px; }
+p, li { color:var(--muted); }
+.card { background:var(--card); border-radius:18px; padding:20px 22px; margin:16px 0; }
+.lead { font-size:20px; color:var(--text); }
+a { color:var(--accent); text-decoration:none; }
+nav { display:flex; gap:18px; margin:8px 0 0; font-size:15px; }
+.lang { margin-top:48px; padding-top:24px; border-top:1px solid color-mix(in srgb, var(--muted) 30%, transparent); }
+footer { margin-top:48px; font-size:14px; color:var(--muted); }
